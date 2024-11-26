@@ -6,3 +6,11 @@ jobs:
     #Setup of simple OS of choice. i.e. Linux
     #create VM with ubuntu OS
     runs-on: ubuntu-latest
+
+    steps:
+      #Setup of environment for test
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
+      - name: List repo
+        run: |
+          ls
